@@ -1,0 +1,263 @@
+aside{
+    display: inline-block;
+    background: lightgrey;
+    position: absolute;
+    width: 250px;
+    height: 900px;
+}
+.main{
+    height: 900px;
+    width: 700px;
+    background: white;
+    margin: auto;
+}
+.box1{
+    position: absolute;
+    background: rgb(160, 54, 71);
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 160px;
+    border-radius: 0 0 200px 200px;
+    z-index: 2;
+}
+.box2{
+    position: absolute;
+    right: 0;
+    top: 180px;
+    background: lightgrey;
+    width: 250px;
+    height: 600px;
+    border-radius: 0 0 200px 200px;
+    z-index: 1;
+}
+.box3{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(160, 54, 71);
+    width: 250px;
+    height: 400px;
+    z-index: auto;
+}
+body{
+    background: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profile{
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid grey 3px;
+}
+.profile:hover{
+    border: solid white 3px;
+    width: 160px;
+    height: 160px;
+    transition: 500ms;
+}
+article{
+    position: relative;
+    display: inline-block;
+    left: 250px;
+    width: 410px;
+    height: auto;
+    padding: 20px;
+}
+.Presentation{
+    display: block;
+}
+article h1{
+    margin: 0;
+    padding-top: 20px;
+    color: rgb(70, 70, 70);
+    font-size: 1.5em;
+}
+.droite{
+    color: rgb(70, 70, 70);
+    font-size: small;
+    font-style: italic;
+    text-align: right;
+    margin: 0;
+}
+.titre{
+    display: block;
+    color: white;
+    background: rgb(160, 54, 71);
+    border: solid grey 2px;
+    border-radius: 5px;
+    padding: 5px;
+    margin:20px auto;
+    font-weight: bold;
+}
+aside .titre{
+    padding: 3px;
+    font-size: small;
+    margin: 7px;
+}
+.titre:hover{
+    color: rgb(160, 54, 71);
+    background: white;
+    border: solid rgb(160, 54, 71) 3px;
+    transition: 300ms;
+}
+.content .titre{
+}
+.item{
+    margin: 5px;
+}
+.texte_gauche{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    font-size: smaller;
+    vertical-align: top;
+}
+.texte_droite{
+    display: inline-block;
+    position:relative;
+    width: 60%;
+    font-size: smaller;
+}
+.lieu{
+    font-style: italic;
+    font-size: x-small;
+}
+.sous-titre{
+    display: inline-block;
+    display: relative;
+    width: auto;
+    margin: 10px;
+    color: white;
+    text-align: left;
+    background-color: gray;
+    padding: 3px;
+    border: solid rgb(160, 54, 71) 3px ;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.liste{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+.sous-titre:hover{
+    transition: 300ms;
+    color:rgb(160, 54, 71);
+    background: gray;
+    border:solid white 3px;
+}
+.contenu{
+    display: inline-block;
+    position: absolute;
+    top:206px;
+    left: 0;
+    background: transparent;
+    margin: 10px;
+    width: 230px;
+    height: 675px;
+    z-index: 4;
+}
+.sideItem{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+}
+.sideItem img{
+    display: inline-block;
+    position: relative;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+.sideItem p{
+    display: inline-block;
+    font-size: x-small;
+    margin-left: 2px;
+}
+.sideGraphLang{
+    display: flex;
+    flex-direction: column;
+}
+.sideGraphLang p{
+    display:block;
+    font-size: x-small;
+}
+.sideGraphLang .graph{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    border: solid rgb(160, 54, 71) 2px;
+}
+.sideGraphLang .barMG{
+    background: rgb(160, 54, 71);
+    height: 3px;
+    width: 80%;
+}
+.sideGraphLang .barFR{
+
+    background: rgb(160, 54, 71);
+    height: 3px;
+    width: 60%;
+}
+.sideGraphLang .barEN{
+    background: rgb(160, 54, 71);
+    height: 3px;
+    width: 55%;
+}
+.sideGraph{
+    display: flex;
+    flex-direction: column;
+}
+.sideGraph p{
+    display:block;
+    font-size: x-small;
+}
+.sideGraph .graph{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: grey;
+    border: solid black 2px;
+}
+.sideGraph .barC{
+
+    background:darkred;
+    height: 3px;
+    width: 90%;
+}
+.sideGraph .barCpp{
+
+    background: darkred;
+    height: 3px;
+    width: 60%;
+}
+.sideGraph .barCSS{
+
+    background: darkred;
+    height: 3px;
+    width: 70%;
+}
+.sideGraph .barJS{
+
+    background: darkred;
+    height: 3px;
+    width: 50%;
+}
+.sideGraph .barPHP{
+
+    background: darkred;
+    height: 3px;
+    width: 30%;
+}
+.sideGraph .barJAVA{
+
+    background: darkred;
+    height: 3px;
+    width: 50%;
+}
