@@ -1,19 +1,22 @@
+:root{
+    --secondary-color : #346460;
+}
 aside{
     display: inline-block;
     background: lightgrey;
     position: absolute;
     width: 250px;
-    height: 900px;
+    height: 925px;
 }
 .main{
-    height: 900px;
-    width: 700px;
+    height: 925px;
+    width: 770px;
     background: white;
     margin: auto;
 }
 .box1{
     position: absolute;
-    background: rgb(160, 54, 71);
+    background: var(--secondary-color);
     right: 0;
     top: 0;
     width: 250px;
@@ -35,7 +38,7 @@ aside{
     position: absolute;
     right: 0;
     bottom: 0;
-    background: rgb(160, 54, 71);
+    background: var(--secondary-color);
     width: 250px;
     height: 400px;
     z-index: auto;
@@ -65,7 +68,7 @@ article{
     position: relative;
     display: inline-block;
     left: 250px;
-    width: 410px;
+    width: 478px;
     height: auto;
     padding: 20px;
 }
@@ -88,7 +91,7 @@ article h1{
 .titre{
     display: block;
     color: white;
-    background: rgb(160, 54, 71);
+    background: var(--secondary-color);
     border: solid grey 2px;
     border-radius: 5px;
     padding: 5px;
@@ -98,15 +101,13 @@ article h1{
 aside .titre{
     padding: 3px;
     font-size: small;
-    margin: 7px;
+    margin: 25px 7px 7px 7px;
 }
 .titre:hover{
-    color: rgb(160, 54, 71);
+    color: var(--secondary-color);
     background: white;
-    border: solid rgb(160, 54, 71) 3px;
+    border: solid var(--secondary-color) 2px;
     transition: 300ms;
-}
-.content .titre{
 }
 .item{
     margin: 5px;
@@ -137,7 +138,7 @@ aside .titre{
     text-align: left;
     background-color: gray;
     padding: 3px;
-    border: solid rgb(160, 54, 71) 3px ;
+    border: solid var(--secondary-color) 3px ;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -147,7 +148,7 @@ aside .titre{
 }
 .sous-titre:hover{
     transition: 300ms;
-    color:rgb(160, 54, 71);
+    color:var(--secondary-color);
     background: gray;
     border:solid white 3px;
 }
@@ -179,83 +180,83 @@ aside .titre{
     font-size: x-small;
     margin-left: 2px;
 }
-.sideGraphLang{
+.graphContainer{
     display: flex;
     flex-direction: column;
 }
-.sideGraphLang p{
+.graphContainer p{
     display:block;
     font-size: x-small;
 }
-.sideGraphLang .graph{
+.graphContainer .graph{
     display: block;
     width: 100%;
     height: 3px;
     background: transparent;
-    border: solid rgb(160, 54, 71) 2px;
+    border: solid var(--secondary-color) 2px;
 }
-.sideGraphLang .barMG{
-    background: rgb(160, 54, 71);
+.graphContainer .barMG{
+    background: var(--secondary-color);
     height: 3px;
     width: 80%;
 }
-.sideGraphLang .barFR{
+.graphContainer .barFR{
 
-    background: rgb(160, 54, 71);
+    background: var(--secondary-color);
     height: 3px;
     width: 60%;
 }
-.sideGraphLang .barEN{
-    background: rgb(160, 54, 71);
+.graphContainer .barEN{
+    background: var(--secondary-color);
     height: 3px;
     width: 55%;
 }
-.sideGraph{
+.graph{
     display: flex;
     flex-direction: column;
 }
-.sideGraph p{
+.graph p{
     display:block;
     font-size: x-small;
 }
-.sideGraph .graph{
+.graph .graph{
     display: block;
     width: 100%;
     height: 3px;
     background: grey;
     border: solid black 2px;
 }
-.sideGraph .barC{
+.graph .barC{
 
     background:darkred;
     height: 3px;
     width: 90%;
 }
-.sideGraph .barCpp{
-
-    background: darkred;
-    height: 3px;
-    width: 60%;
-}
-.sideGraph .barCSS{
+.graph .barCpp{
 
     background: darkred;
     height: 3px;
     width: 70%;
 }
-.sideGraph .barJS{
+.graph .barCSS{
 
     background: darkred;
     height: 3px;
-    width: 50%;
+    width: 80%;
 }
-.sideGraph .barPHP{
+.graph .barJS{
 
     background: darkred;
     height: 3px;
-    width: 30%;
+    width: 70%;
 }
-.sideGraph .barJAVA{
+.graph .barPHP{
+
+    background: darkred;
+    height: 3px;
+    width: 60%;
+}
+.graph .barJAVA{
 
     background: darkred;
     height: 3px;
