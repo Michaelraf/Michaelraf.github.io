@@ -228,37 +228,37 @@ aside .titre{
 }
 .graph .barC{
 
-    background:darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 90%;
 }
 .graph .barCpp{
 
-    background: darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 70%;
 }
 .graph .barCSS{
 
-    background: darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 80%;
 }
 .graph .barJS{
 
-    background: darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 70%;
 }
 .graph .barPHP{
 
-    background: darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 60%;
 }
 .graph .barJAVA{
 
-    background: darkred;
+    background: var(--secondary-color);
     height: 3px;
     width: 50%;
 }
